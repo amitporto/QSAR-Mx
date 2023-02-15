@@ -534,8 +534,9 @@ def trainsetfit2(X,y,filer,file1):
         tb=X[a].corr()
         mx,mn=corr(tb)
     else:
-        mx='Less number of descriptors'
-        mn='Less number of descriptors'
+        print('Less number of descriptors')
+        mx=0
+        mn=0
     #tbn=str(a_)+'_corr.csv'
     #tb.to_csv(tbn)
     #pt.to_csv('pt_train_'+str(cthreshold)+'_'+str(vthreshold)+'.csv')
